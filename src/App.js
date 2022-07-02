@@ -3,6 +3,7 @@ import Formpost from "./components/Formpost";
 import Postlist from "./components/Postlist";
 
 
+
 const App = () =>{
     const [state, setstate] = useState([
         {id:1, title:'React', body:'react programming'},
@@ -18,12 +19,11 @@ const App = () =>{
   
 
     return(
-     
         <div className="bg-slate-400 font-serif">
             <Formpost create={createpost}/>
             <Postlist post={state} title="To react"/>
-        
-           </div>
-           )
+           
+        </div>
+        )
 }
 export default App
