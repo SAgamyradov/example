@@ -1,29 +1,27 @@
 import React, { useState } from "react";
-import Formpost from "./components/Formpost";
 import Postlist from "./components/Postlist";
+import Mybutton from "./components/ui/button/Mybutton";
+import Myinput from "./components/ui/button/Myinput";
 
 
 
 const App = () =>{
-    const [state, setstate] = useState([
-        {id:1, title:'React', body:'react programming'},
-        {id:2, title:'React', body:'react programming'},
-        {id:3, title:'React', body:'react programming'},
-        {id:4, title:'React', body:'react programming'},
-        {id:5, title:'React', body:'react programming'},
-    ])
-    const createpost = (newpost) =>{
-        setstate[state, newpost]
-    }
-
+        const[posts, setposts]=useState([
+                {id:1, title:'React', body:'React program language'},
+                {id:2, title:'React', body:'React program language'},
+                {id:3, title:'React', body:'React program language'}
+        ])
   
 
     return(
-        <div className="bg-slate-400 font-serif">
-            <Formpost create={createpost}/>
-            <Postlist post={state} title="To react"/>
-           
-        </div>
+        <div>
+                <Myinput type='text' placeholder='girish...'/>
+                <Myinput type='text' placeholder='chykysh...'/>
+                <Mybutton>ADD</Mybutton>
+             <Postlist posts={posts} title='React'/>
+             
+     
+     </div>
         )
 }
 export default App

@@ -1,14 +1,17 @@
-import React from "react";
-import Counter from "./Counter";
+import React from 'react'
+import Postitem from './Postitem'
 
-const Postlist = ({post, title}) =>{
-    return(
-        <div>
-             <h1 className="text-center text-4xl">{title}</h1>
-            {post.map((post, index )=>    
-                <Counter number={index +1} post={post} key={post.id}/>
-            )}
-        </div>
-    )
+const Postlist = ({posts, title}) => {
+  return (
+    <div>
+        <h1 className='text-center text-5xl'>
+            {title}
+        </h1>
+        {posts.map((post) =>
+                <Postitem post={post} key={post.id}/>
+                )}
+    </div>
+  )
 }
+
 export default Postlist
