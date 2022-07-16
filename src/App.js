@@ -18,7 +18,7 @@ const App = () =>{
                 <Myinput type='text' placeholder='girish...'/>
                 <Myinput type='text' placeholder='chykysh...'/>
                 <Mybutton>ADD</Mybutton>
-             <Postlist posts={posts} title='React'/>
+             <Postlist listpost={posts} title='React'/>
              
      
      </div>
