@@ -22,10 +22,12 @@ const App = () =>{
 
     return(
         <div className="bg-slate-400 font-montserratAlternates-medium">
-            <PostForm create={createpost}/>
-            <Postlist remove={removePost} post={state} title="To react"/>
-           
-        </div>
+             <PostForm create={createpost}/>
+            {state.length !== 0
+            ? <Postlist remove={removePost} post={state} title="To react"/>
+            : <h1>POSTLAR TAPYLMADY</h1>
+            }
+            </div>
         )
 }
 export default App
