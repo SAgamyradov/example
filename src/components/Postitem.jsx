@@ -5,7 +5,7 @@ export const Postitem = (props) => {
     <div className=' border-8 border-orange-500 text-2xl rounded-xl m-2 p-3'>
         <div className=' '>
             <div className='post content'>
-                <strong>{props.post.id}. {props.post.title}</strong>
+                <strong>{props.number}. {props.post.title}</strong>
                 <div>
                     {props.post.body}
                 </div>

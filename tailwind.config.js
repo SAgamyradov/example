@@ -5,6 +5,10 @@ module.exports = {
   theme: {
     
     extend: {
+      fontFamily: {
+          'montserratAlternates-bold':["MontserratAlternates-Bold"],
+          'montserratAlternates-medium':["MontserratAlternates-Medium"]
+      },
       colors:{
         'squid-pink':'#FF287E',
       }
