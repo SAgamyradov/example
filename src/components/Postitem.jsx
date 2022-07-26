@@ -1,4 +1,5 @@
 import React from 'react'
+import MyButton from './ui/button/MyButton'
 
 export const Postitem = (props) => {
   return (
@@ -10,9 +11,11 @@ export const Postitem = (props) => {
                     {props.post.body}
                 </div>
             <div className='flex justify-end'>
-                <button className='bg-gray-600 m-1 p-1 hover:bg-slate-400 duration-500 rounded-xl'>
+               
+                <MyButton onClick={() => (props.remove(props.post))} className='bg-gray-600 m-1 p-1
+                 hover:bg-slate-400 duration-300 rounded-xl'>
                     pozmak
-                    </button>
+                    </MyButton>
             </div>
             </div>
 

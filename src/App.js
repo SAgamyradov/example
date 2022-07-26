@@ -13,13 +13,17 @@ const App = () =>{
     const createpost = (newPost) =>{
         setState([...state, newPost])
     }
+    //posty docerny komponentdan alyas
 
+    const removePost = (post) =>{
+        setState(state.filter(p => p.id !==post.id))
+    }
   
 
     return(
         <div className="bg-slate-400 font-montserratAlternates-medium">
             <PostForm create={createpost}/>
-            <Postlist post={state} title="To react"/>
+            <Postlist remove={removePost} post={state} title="To react"/>
            
         </div>
         )
