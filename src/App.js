@@ -8,9 +8,7 @@ const App = () =>{
     const [state, setState] = useState([
         {id:1, title:'React', body:'react programming'},
         {id:2, title:'React', body:'react programming'},
-        {id:3, title:'React', body:'react programming'},
-        {id:4, title:'React', body:'react programming'},
-        {id:5, title:'React', body:'react programming'},
+      
     ])
     const createpost = (newPost) =>{
         setState([...state, newPost])
